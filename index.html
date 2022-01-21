@@ -388,40 +388,57 @@
                 <h3>What are you waiting for?</h3>
                 <p>We would greatly appreciate if you could RSVP before 12th of February 2022</p>
                 <form id="rsvp-form" class="rsvp-form"
-                      action="https://script.google.com/macros/s/AKfycby9AdTUxw6dobjOlGLuzMjOZziRaR1wknzOSyw7EPTgj9cQt7p3ZhQxEscIJDYyeosoSQ/exec"
+                      action="https://script.google.com/macros/s/AKfycbxXdVdPzvnIW5qABra7Lm9YQ0DYgMcvW9eKYrd5Xkga0c9mgHcXEmCo9n9rLrpOXldQkw/exec"
                       method="POST">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><select name="extras" id="extras" class=""
-                                                                  required></select>
-                            </div>
-                        </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-key"></i><input name="invite_code" id="invite_code"
                                                                 class="" min="0"
                                                                 placeholder="Invite code"
                                                                 required>
+                            </div>                            
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                                                     placeholder="Your email"
+                                                                     required>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-users"></i><select name="extras" id="extras" class=""                          
+                                                                  required>
+                                                                  <option value="0">-- Enter code to select option --</option>
+                                                            </select>
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input name="names[]" class="names"
+                                                                 placeholder="Your name"
+                                                                 required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><select name="foods[]" class="foods"                          
+                                                                  required>
+                                                                  <option value="">-- Select food choice --</option>
+                                                                  <option value="1">Filet Mignon Steak</option>
+                                                                  <option value="2">Teriyaki Glazed Baked Salmon</option>
+                                                                  <option value="3">Butternut Squash Ravioli</option>
+                                                            </select>
+                            </div>
+                        </div>                    
+                    </div>    
+                    <div id="additional-guests">
+                    </div>                                        
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
