@@ -906,3 +906,33 @@ body.modal-open{
     padding:25px
 }
  
+/* (A) WRAPPER */
+.countdown * {
+    font-family: Impact, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .countdown {
+    display: flex;
+    margin: 0 auto;
+    min-width: 500px;
+  }
+  
+  /* (B) DAY/HR/MIN/SEC CELLS */
+  .countdown .cell {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+  }
+  .countdown .digits {
+    font-size: 24px;
+    color: #000;
+    background: #f8f9fd;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .countdown .text {
+    margin-top: 10px;
+    color: rgb(201, 201, 201);
+  }
+  
