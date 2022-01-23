@@ -908,7 +908,7 @@ body.modal-open{
  
 /* (A) WRAPPER */
 .countdown * {
-    font-family: Impact, sans-serif;
+    font-family:"Open Sans",sans-serif;
     box-sizing: border-box;
     text-align: center;
   }
